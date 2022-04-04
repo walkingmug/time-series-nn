@@ -47,9 +47,9 @@ def plot_confusion_matrix(y_test, y_test_predict, labels = [0,1,2]):
 
 
 # get data
-df_A = pd.read_csv('/Users/valija/Desktop/Master Thesis/code/WINES-PRED-C/A.csv', ',')
-df_B = pd.read_csv('/Users/valija/Desktop/Master Thesis/code/WINES-PRED-C/B.csv', ',')
-df_C = pd.read_csv('/Users/valija/Desktop/Master Thesis/code/WINES-PRED-C/C.csv', ',')
+df_A = pd.read_csv('A.csv', ',')
+df_B = pd.read_csv('B.csv', ',')
+df_C = pd.read_csv('C.csv', ',')
 
 df_A.drop(['Time'], inplace=True, axis=1)
 df_B.drop(['Time'], inplace=True, axis=1)
@@ -60,7 +60,7 @@ df_AB = pd.concat([df_A, df_B], ignore_index=True, sort=False)
 # set learning dataset and path
 dataset = df_AB
 dataset_name = 'AB'
-path = '/Users/valija/Desktop/Master Thesis/code/WINES-PRED-C/window_method/multi_output/'
+path = ''
 features = 20000
 num_class = 3
 percentage = 0.8
