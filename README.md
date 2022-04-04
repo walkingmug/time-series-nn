@@ -56,8 +56,8 @@ percentage = 0.8
 * The above scripts may be executed from 'main.py'.
 
 ## Help
-
-Keras may require PyDot and GraphViz to be installed:
+* The prediction returns labels on indices of windows.
+* Keras may require PyDot and GraphViz to be installed:
 ```
 pip install pydot
 pip install graphviz
